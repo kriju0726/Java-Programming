@@ -1,44 +1,38 @@
-// Converted from AND-GATE.c
-import java.util.*;
-public class AND-GATE {
+import java.util.Scanner;
+
+public class ANDGate {
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        //AND FUNCTION....
-        int main()
-        {
-        int ar1[5],ar2[5],i,j,k,ar3[5];
-        System.out.printf("Enter no. for ar1[5]...: ");
-        for(i=0; i<5; i++)
-        {
-        // scanf("%d",&ar1[i]); // Note: scanf needs manual input handling in Java
+
+        int[] ar1 = new int[5];
+        int[] ar2 = new int[5];
+        int[] ar3 = new int[5];
+
+        System.out.println("Enter 5 binary numbers (0 or 1) for ar1:");
+        for (int i = 0; i < 5; i++) {
+            ar1[i] = sc.nextInt();
         }
-        System.out.printf("Enter no. for ar2[5]...: ");
-        for(j=0; j<5; j++)
-        {
-        // scanf("%d",&ar2[j]); // Note: scanf needs manual input handling in Java
+
+        System.out.println("Enter 5 binary numbers (0 or 1) for ar2:");
+        for (int i = 0; i < 5; i++) {
+            ar2[i] = sc.nextInt();
         }
-        
-        for(i=0; i<5; i++)
-        {
-        if(ar1[i]==1 && ar2[i]==1)
-        {
-        ar3[i]=1;
+
+        // AND logic
+        for (int i = 0; i < 5; i++) {
+            if (ar1[i] == 1 && ar2[i] == 1) {
+                ar3[i] = 1;
+            } else {
+                ar3[i] = 0;
+            }
         }
-        else if(ar1[i]==0 && ar2[i]==1)
-        ar3[i]=0;
-        else if(ar1[i]==1 && ar2[i]==0)
-        ar3[i]=0;
-        else
-        ar3[i]=0;
+
+        System.out.print("Result of AND operation (ar3): ");
+        for (int i = 0; i < 5; i++) {
+            System.out.print(ar3[i] + " ");
         }
-        
-        System.out.printf("Enter no. for ar3[5]...: ");
-        for(j=0; j<5; j++)
-        {
-        System.out.printf("%d ",ar3[j]);
-        }
-        
-        return 0;
-        }
+
+        sc.close();
     }
 }
