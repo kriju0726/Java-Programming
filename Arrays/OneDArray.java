@@ -1,4 +1,4 @@
-import java.util.*;
+/*import java.util.*;
 
 class OneDArray {
     public static void main(String[] args) {
@@ -25,7 +25,7 @@ class OneDArray {
 
         sc.close(); // ✅ good practice
     }
-}
+}*/
 
 
 
