@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class LengthString {
     public static void main(String[] args) {
 
-        String str = "hello world";
+        String str = "hello world!!! I am Krish";
 
         // length of string
         int length = str.length();
@@ -16,3 +16,6 @@ public class LengthString {
         System.out.println("Uppercase: " + upper);
     }
 }
+
+
+
